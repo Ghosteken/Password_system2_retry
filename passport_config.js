@@ -8,7 +8,7 @@ const passport = require('passport');
     // get users by their email
     const user = getUserByEmail(email);
     if (user == null) {
-        return done(null,false,{message:'no user foud with that email address'})
+        return done(null,false, {message:'no user foud with that email address'})
     }
     try {
         if (await bcrypt.compare(password,user.password) ){
@@ -27,7 +27,7 @@ const passport = require('passport');
     passport.use(new LocalStrategy({usernameField:'email'}, authenticateUser))
     passport.serializeUser((user,done) => done(null, user.id) )
     passport.deserializeUser((id,done) =>{
-        done(null,getUserById(id))
+        return done(null,getUserById(id))
     })
 }
 
