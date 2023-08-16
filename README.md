@@ -11,7 +11,8 @@ Some popular authentication libraries in the Node.js ecosystem are:
 
     OAuth Libraries: OAuth is an authorization protocol commonly used for social login and third-party authorization. Libraries like oauth or oauth2 provide functionality to interact with OAuth providers such as Facebook, Google, and Twitter, allowing users to authenticate using their accounts from these platforms.
 
-    express-session: While primarily a session management library, express-session also plays a role in authentication by managing user sessions once they are authenticated. It helps maintain a user's state across requests by storing session data on the server and associating it with a session ID stored in a user's browser cookie.
+    express-session: While primarily a session management library, express-session also plays a role in authentication 
+    by managing user sessions once they are authenticated. It helps maintain a user's state across requests by storing session data on the server and associating it with a session ID stored in a user's browser cookie.
 
 These libraries abstract the complexities of authentication and session management, allowing developers to focus on building features and ensuring security without needing to implement the entire authentication process from scratch.
 
