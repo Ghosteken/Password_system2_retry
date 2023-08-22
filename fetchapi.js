@@ -1,4 +1,5 @@
-//see result in a browser
+//testing
+
 fetch("https://reqres.in/api/users",{
     method: "post",
     headers: {
@@ -11,4 +12,5 @@ fetch("https://reqres.in/api/users",{
     return res.json()
    })
    .then(data=> console.log(data));
+//dont know whats going on
    .catch(error => console.log('Error'))
